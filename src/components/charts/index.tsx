@@ -1,14 +1,8 @@
 'use client'
+import { useRef } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, AreaChart, Area, Legend } from 'recharts'
 
 const COLORS = ['#6366f1', '#8b5cf6', '#a855f7', '#d946ef', '#ec4899', '#f43f5e', '#f97316', '#fbbf24', '#22c55e', '#14b8a6', '#06b6d4', '#3b82f6']
-
-const renderPieLabel = (entry: any) => {
-  const { name, percent } = entry
-  if (percent < 0.05) return ''
-  const shortName = name.length > 12 ? name.slice(0, 12) + '\u2026' : name
-  return `${shortName} ${(percent * 100).toFixed(0)}%`
-}
 
 export function BarChartCard({ data, dataKey, nameKey, title, color = '#6366f1', height = 300 }: {
   data: any[]; dataKey: string; nameKey: string; title?: string; color?: string; height?: number
@@ -31,18 +25,25 @@ export function BarChartCard({ data, dataKey, nameKey, title, color = '#6366f1',
 export function PieChartCard({ data, dataKey, nameKey, title, height = 300, onSliceClick }: {
   data: any[]; dataKey: string; nameKey: string; title?: string; height?: number; onSliceClick?: (name: string) => void
 }) {
+  const clickGuard = useRef(0)
+  const handleClick = onSliceClick ? (entry: any) => {
+    const now = Date.now()
+    if (now - clickGuard.current < 300) return
+    clickGuard.current = now
+    onSliceClick(entry[nameKey])
+  } : undefined
+
   return (
     <div>
       {title && <h4 className="text-sm font-medium text-muted-foreground mb-3">{title}</h4>}
       <ResponsiveContainer width="100%" height={height}>
         <PieChart>
           <Pie data={data} dataKey={dataKey} nameKey={nameKey} cx="50%" cy="50%" outerRadius={90}
-            label={renderPieLabel} labelLine={true}
-            cursor={onSliceClick ? 'pointer' : undefined}
             isAnimationActive={true} animationBegin={100} animationDuration={700} animationEasing="ease-out">
             {data.map((entry, i) => (
               <Cell key={i} fill={COLORS[i % COLORS.length]}
-                onMouseDown={onSliceClick ? () => onSliceClick(entry[nameKey]) : undefined} />
+                style={{ cursor: onSliceClick ? 'pointer' : undefined }}
+                onClick={handleClick} />
             ))}
           </Pie>
           <Tooltip contentStyle={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }} />

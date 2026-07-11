@@ -45,7 +45,7 @@ export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
     <Card className="card-hover">
       <CardContent className="p-5">
         <div ref={ref} className="flex items-center justify-between">
-          <div className="space-y-1">
+          <div>
             <p className="text-sm font-medium text-muted-foreground">{title}</p>
             <p className="text-2xl font-bold" style={color ? { color } : undefined}>
               {typeof value === 'number' ? displayValue.toLocaleString() : value}
@@ -61,7 +61,7 @@ export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
               </div>
             )}
           </div>
-          <div className="rounded-lg bg-primary/10 p-2.5 text-primary transition-transform duration-200 group-hover:scale-110">
+          <div className="rounded-lg bg-primary/10 p-2 text-primary shrink-0">
             {icon}
           </div>
         </div>
