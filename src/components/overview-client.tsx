@@ -1,120 +1,123 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { KpiCard } from '@/components/kpi-card'
-import { BarChartCard, PieChartCard } from '@/components/charts'
-import { Link, Users, UserCheck, ShoppingBag, Tag, RefreshCw, X } from 'lucide-react'
-import type { DashboardState, Product } from '@/lib/types'
+import { BarChartCard, AreaChartCard } from '@/components/charts'
+import { Link, Activity, ShoppingCart, DollarSign, TrendingUp, Users } from 'lucide-react'
+import type { DashboardState, Product, ClickReport, ConversionReport, ClickStats } from '@/lib/types'
 
-export default function OverviewClient({ state, products, offers, categories, commBuckets }: {
+export default function OverviewClient({ state, products, clickReport, conversionReport }: {
   state: DashboardState
   products: Product[]
-  offers: any[]
-  categories: string[]
-  commBuckets: Record<string, number>
+  clickReport: ClickReport | null
+  conversionReport: ConversionReport | null
 }) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-  const normCat = selectedCategory?.toLowerCase().trim() ?? null
+  const [stats, setStats] = useState<ClickStats | null>(null)
 
-  const categoryCounts = categories.map(c => ({
-    name: c, value: products.filter(p => (p.category ?? '').toLowerCase().trim() === c.toLowerCase().trim()).length
-  }))
-  const commData = Object.entries(commBuckets).map(([name, value]) => ({ name, value }))
+  useEffect(() => {
+    fetch('/api/stats').then(r => r.json()).then(setStats).catch(() => {})
+  }, [])
 
-  const topProducts = [...products]
-    .filter(p => p.commission != null)
-    .filter(p => !selectedCategory || (p.category ?? '').toLowerCase().trim() === normCat)
-    .sort((a, b) => (b.commission || 0) - (a.commission || 0))
-    .slice(0, 10)
+  const totalClicks = stats?.totalClicks ?? 0
+  const todayClicks = stats?.todayClicks ?? 0
+  const totalOrders = conversionReport?.summary.totalOrders ?? 0
+  const totalCommission = conversionReport?.summary.totalCommission ?? 0
+  const avgCommission = totalOrders > 0 ? Math.round(totalCommission / totalOrders) : 0
+  const groupsReached = state.totalGroups
 
-  const topShops = Object.entries(
-    products.reduce((acc: Record<string, { count: number; commission: number }>, p) => {
-      if (!acc[p.shop]) acc[p.shop] = { count: 0, commission: 0 }
-      acc[p.shop].count++
-      acc[p.shop].commission += p.commission || 0
-      return acc
-    }, {})
-  ).sort((a, b) => b[1].count - a[1].count).slice(0, 10).map(([name, vals]) => ({ name, ...vals }))
+  const clickTimeline = stats?.dailyTimeline ?? []
+  const topLinks = stats?.topLinks ?? []
+
+  const commTimeline = conversionReport?.timeline ?? []
+  const topProducts = conversionReport?.topProducts ?? []
+
+  const rawTimeline = state.postedTimeline || []
+  const postedTimeline = rawTimeline.length > 0 ? rawTimeline
+    : state.postedLinks.map(u => ({ ts: '', url: u }))
+  const sortedPosts = [...postedTimeline].sort((a, b) => a.ts.localeCompare(b.ts))
+  const bucketSize = Math.max(1, Math.ceil(sortedPosts.length / 30))
+  const postActivityBuckets: { label: string; posts: number }[] = []
+  for (let i = 0; i < sortedPosts.length; i += bucketSize) {
+    const slice = sortedPosts.slice(i, i + bucketSize)
+    const label = slice.length > 1
+      ? `${slice[0].ts.slice(11, 16)}-${slice[slice.length - 1].ts.slice(11, 16)}`
+      : slice[0].ts.slice(11, 16)
+    postActivityBuckets.push({ label, posts: slice.length })
+  }
 
   return (
     <>
       <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-        <KpiCard title="Links Posted" value={state.totalPostedLinks} icon={<Link className="h-4 w-4" />} color="#6366f1" />
-        <KpiCard title="Groups Reached" value={state.totalGroups} icon={<Users className="h-4 w-4" />} color="#8b5cf6" />
-        <KpiCard title="Accounts" value={state.activeAccounts} icon={<UserCheck className="h-4 w-4" />} color="#a855f7" />
-        <KpiCard title="Products" value={products.length} icon={<ShoppingBag className="h-4 w-4" />} color="#ec4899" />
-        <KpiCard title="Offers" value={offers.length} icon={<Tag className="h-4 w-4" />} color="#f97316" />
-        <KpiCard title="Cycle" value={state.currentCycle + 1} icon={<RefreshCw className="h-4 w-4" />} color="#22c55e" />
+        <KpiCard title="Total Clicks" value={totalClicks} icon={<Link className="h-4 w-4" />} color="#6366f1"
+          trend={clickReport?.change ? { value: clickReport.change.totalClicksPct ?? 0, label: 'vs last report' } : undefined} />
+        <KpiCard title="Today Clicks" value={todayClicks} icon={<Activity className="h-4 w-4" />} color="#8b5cf6" />
+        <KpiCard title="Orders" value={totalOrders} icon={<ShoppingCart className="h-4 w-4" />} color="#a855f7"
+          trend={conversionReport?.change ? { value: conversionReport.change.totalOrdersPct ?? 0, label: 'vs last report' } : undefined} />
+        <KpiCard title="Commission Earned" value={totalCommission ? `₫${totalCommission.toLocaleString()}` : 0} icon={<DollarSign className="h-4 w-4" />} color="#ec4899"
+          trend={conversionReport?.change ? { value: conversionReport.change.totalCommissionPct ?? 0, label: 'vs last report' } : undefined} />
+        <KpiCard title="Avg Commission" value={avgCommission ? `₫${avgCommission.toLocaleString()}` : 0} icon={<TrendingUp className="h-4 w-4" />} color="#f97316" />
+        <KpiCard title="Groups Reached" value={groupsReached} icon={<Users className="h-4 w-4" />} color="#22c55e" />
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">
         <Card className="card-hover">
-          <CardHeader className="border-b border-border/50"><CardTitle className="flex items-center gap-2"><span className="h-1.5 w-6 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 inline-block" /> Product Categories</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Clicks Timeline (7 days)</CardTitle></CardHeader>
           <CardContent>
-            <PieChartCard data={categoryCounts} dataKey="value" nameKey="name" height={280}
-              onSliceClick={(name) => setSelectedCategory(name === selectedCategory ? null : name)} />
+            {clickTimeline.length > 0
+              ? <AreaChartCard data={clickTimeline} dataKey="clicks" nameKey="date" height={280} />
+              : <p className="text-sm text-muted-foreground text-center py-12">No click data yet. Start posting redirect links.</p>}
           </CardContent>
         </Card>
         <Card className="card-hover">
-          <CardHeader><CardTitle>Commission Rate Distribution</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Top Clicked Links</CardTitle></CardHeader>
           <CardContent>
-            <BarChartCard data={commData} dataKey="value" nameKey="name" color="#8b5cf6" height={280} />
+            {topLinks.length > 0
+              ? <BarChartCard data={topLinks.map(l => ({ name: l.productName?.slice(0, 30) || l.slug, clicks: l.clicks }))} dataKey="clicks" nameKey="name" color="#8b5cf6" height={280} />
+              : <p className="text-sm text-muted-foreground text-center py-12">No clicks recorded yet.</p>}
           </CardContent>
         </Card>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      {commTimeline.length > 0 && (
         <Card className="card-hover">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle>Top 10 Products by Commission</CardTitle>
-              {selectedCategory && (
-                <button onClick={() => setSelectedCategory(null)}
-                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors">
-                  <X className="h-3 w-3" /> {selectedCategory}
-                </button>
-              )}
-            </div>
-          </CardHeader>
+          <CardHeader><CardTitle>Commission Timeline</CardTitle></CardHeader>
+          <CardContent>
+            <BarChartCard data={commTimeline} dataKey="commission" nameKey="date" color="#ec4899" height={280} />
+          </CardContent>
+        </Card>
+      )}
+
+      {topProducts.length > 0 && (
+        <Card className="card-hover">
+          <CardHeader><CardTitle>Top Converting Products</CardTitle></CardHeader>
           <CardContent className="p-0">
             <div className="divide-y divide-border text-sm">
               {topProducts.map((p, i) => (
-                <div key={p.id} className="flex items-center justify-between px-6 py-3 transition-colors duration-150 hover:bg-muted/30">
+                <div key={i} className="flex items-center justify-between px-6 py-3 transition-colors duration-150 hover:bg-muted/30">
                   <div className="flex items-center gap-3 min-w-0">
                     <span className="text-muted-foreground w-5 text-xs font-medium">#{i + 1}</span>
-                    <span className="truncate max-w-[300px]">{p.name}</span>
-                    <Badge variant={selectedCategory && (p.category ?? '').toLowerCase().trim() === normCat ? 'default' : 'outline'}>{p.category}</Badge>
+                    <span className="truncate max-w-[280px]">{p.name}</span>
+                    <span className="shrink-0 text-xs text-muted-foreground">{p.shop}</span>
                   </div>
                   <div className="flex items-center gap-4 shrink-0">
-                    <span className="text-muted-foreground">{p.price_raw}</span>
-                    <span className="font-semibold text-success">₫{p.commission?.toLocaleString()}</span>
+                    <span className="text-xs text-muted-foreground">x{p.qty}</span>
+                    <span className="font-semibold text-success">₫{p.commission.toLocaleString()}</span>
                   </div>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
+      )}
+
+      {postActivityBuckets.length > 0 && (
         <Card className="card-hover">
-          <CardHeader><CardTitle>Top Shops</CardTitle></CardHeader>
-          <CardContent className="p-0">
-            <div className="divide-y divide-border text-sm">
-              {topShops.slice(0, 8).map((s, i) => (
-                <div key={s.name} className="flex items-center justify-between px-6 py-3 transition-colors duration-150 hover:bg-muted/30">
-                  <div className="flex items-center gap-3 min-w-0">
-                    <span className="text-muted-foreground w-5 text-xs font-medium">#{i + 1}</span>
-                    <span className="truncate max-w-[300px]">{s.name}</span>
-                  </div>
-                  <div className="flex items-center gap-4 shrink-0">
-                    <span className="text-xs text-muted-foreground">{s.count} products</span>
-                    <span className="font-semibold">₫{(s.commission / 1000).toFixed(0)}K</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <CardHeader><CardTitle>Post Activity</CardTitle></CardHeader>
+          <CardContent>
+            <AreaChartCard data={postActivityBuckets} dataKey="posts" nameKey="label" height={200} />
           </CardContent>
         </Card>
-      </div>
+      )}
     </>
   )
 }

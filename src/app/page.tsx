@@ -1,12 +1,11 @@
-import { getState, getProducts, getOffers, getCategories, summarizeCommissionRates } from '@/lib/data'
+import { getState, getProducts, getClickReport, getConversionReport } from '@/lib/data'
 import OverviewClient from '@/components/overview-client'
 
 export default function OverviewPage() {
   const state = getState()
   const products = getProducts()
-  const offers = getOffers()
-  const categories = getCategories(products)
-  const commBuckets = summarizeCommissionRates(products)
+  const clickReport = getClickReport()
+  const conversionReport = getConversionReport()
 
   return (
     <div className="space-y-6">
@@ -15,8 +14,8 @@ export default function OverviewPage() {
         <p className="text-muted-foreground text-sm mt-1">Affiliate automation performance at a glance</p>
       </div>
       <OverviewClient
-        state={state} products={products} offers={offers}
-        categories={categories} commBuckets={commBuckets} />
+        state={state} products={products}
+        clickReport={clickReport} conversionReport={conversionReport} />
     </div>
   )
 }

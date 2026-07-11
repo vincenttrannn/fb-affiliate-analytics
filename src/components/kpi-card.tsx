@@ -46,8 +46,8 @@ export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
       <CardContent className="p-5">
         <div ref={ref} className="flex flex-col gap-1.5">
           <div className="flex items-center gap-2">
-            <div className="text-primary shrink-0">{icon}</div>
-            <p className="text-sm font-medium text-muted-foreground">{title}</p>
+            <div className="flex items-center justify-center h-5 w-5 text-primary shrink-0">{icon}</div>
+            <p className="text-sm font-medium text-muted-foreground leading-5">{title}</p>
           </div>
           <p className="text-2xl font-bold" style={color ? { color } : undefined}>
             {typeof value === 'number' ? displayValue.toLocaleString() : value}

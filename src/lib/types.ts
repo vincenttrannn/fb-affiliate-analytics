@@ -52,3 +52,41 @@ export interface GroupInfo {
   totalPosts: number;
   links: string[];
 }
+
+export interface ClickReport {
+  sourceFile: string;
+  exportedAt: string;
+  summary: {
+    totalClicks: number;
+    facebookClicks: number;
+    otherClicks: number;
+    periodFrom: string;
+    periodTo: string;
+    clicksBySubId: Record<string, number>;
+  };
+  timeline: { date: string; clicks: number }[];
+  change: { totalClicksPct: number | null } | null;
+}
+
+export interface ConversionReport {
+  sourceFile: string;
+  exportedAt: string;
+  summary: {
+    totalOrders: number;
+    totalItems: number;
+    totalCommission: number;
+    totalPurchaseValue: number;
+    periodFrom: string;
+    periodTo: string;
+  };
+  timeline: { date: string; orders: number; commission: number }[];
+  topProducts: { name: string; shop: string; commission: number; qty: number; category: string }[];
+  change: { totalOrdersPct: number | null; totalCommissionPct: number | null } | null;
+}
+
+export interface ClickStats {
+  totalClicks: number;
+  todayClicks: number;
+  dailyTimeline: { date: string; clicks: number }[];
+  topLinks: { slug: string; clicks: number; productName?: string; targetUrl?: string }[];
+}

@@ -37,6 +37,14 @@ export function summarizeCommissionRates(products: Product[]) {
   return buckets;
 }
 
+export function getClickReport(): import('./types').ClickReport | null {
+  try { return readJSON<import('./types').ClickReport>('click_report.json') } catch { return null }
+}
+
+export function getConversionReport(): import('./types').ConversionReport | null {
+  try { return readJSON<import('./types').ConversionReport>('conversion_report.json') } catch { return null }
+}
+
 export function summarizePriceRanges(products: Product[]) {
   const ranges: Record<string, number> = {};
   for (const p of products) {

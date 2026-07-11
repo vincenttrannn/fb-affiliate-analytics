@@ -9,24 +9,6 @@ const renderPieLabel = (entry: any) => {
   return `${(percent * 100).toFixed(0)}%`
 }
 
-export function BarChartCard({ data, dataKey, nameKey, title, color = '#6366f1', height = 300 }: {
-  data: any[]; dataKey: string; nameKey: string; title?: string; color?: string; height?: number
-}) {
-  return (
-    <div>
-      {title && <h4 className="text-sm font-medium text-muted-foreground mb-3">{title}</h4>}
-      <ResponsiveContainer width="100%" height={height}>
-        <BarChart data={data}>
-          <XAxis dataKey={nameKey} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
-          <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
-          <Tooltip contentStyle={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }} />
-          <Bar dataKey={dataKey} fill={color} radius={[4, 4, 0, 0]} isAnimationActive={true} animationDuration={600} animationEasing="ease-out" />
-        </BarChart>
-      </ResponsiveContainer>
-    </div>
-  )
-}
-
 export function PieChartCard({ data, dataKey, nameKey, title, height = 300, onSliceClick }: {
   data: any[]; dataKey: string; nameKey: string; title?: string; height?: number; onSliceClick?: (name: string) => void
 }) {
@@ -46,6 +28,24 @@ export function PieChartCard({ data, dataKey, nameKey, title, height = 300, onSl
           <Legend verticalAlign="bottom" height={36} iconType="circle" iconSize={8}
             formatter={(value: string) => <span className="text-xs text-muted-foreground">{value}</span>} />
         </PieChart>
+      </ResponsiveContainer>
+    </div>
+  )
+}
+
+export function BarChartCard({ data, dataKey, nameKey, title, color = '#6366f1', height = 300 }: {
+  data: any[]; dataKey: string; nameKey: string; title?: string; color?: string; height?: number
+}) {
+  return (
+    <div>
+      {title && <h4 className="text-sm font-medium text-muted-foreground mb-3">{title}</h4>}
+      <ResponsiveContainer width="100%" height={height}>
+        <BarChart data={data}>
+          <XAxis dataKey={nameKey} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+          <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+          <Tooltip contentStyle={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 8, fontSize: 12 }} />
+          <Bar dataKey={dataKey} fill={color} radius={[4, 4, 0, 0]} isAnimationActive={true} animationDuration={600} animationEasing="ease-out" />
+        </BarChart>
       </ResponsiveContainer>
     </div>
   )
