@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 441,
+  "totalPostedLinks": 442,
   "totalGroups": 392,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-12T18:38:49.058060",
+  "lastUpdated": "2026-07-12T18:39:56.895581",
   "postedLinks": [
     "https://s.shopee.vn/7prRPEjrm4",
     "https://s.shopee.vn/9fJ5b9TD1p",
@@ -446,7 +446,8 @@
     "https://s.shopee.vn/2LWUv5hGCE",
     "https://s.shopee.vn/2qSlW0fMBN",
     "https://s.shopee.vn/3B5buce5VT",
-    "https://s.shopee.vn/3LP26vdSAW"
+    "https://s.shopee.vn/3LP26vdSAW",
+    "https://s.shopee.vn/40eiu9auoi"
   ],
   "postedTimeline": [
     {
@@ -1132,6 +1133,10 @@
     {
       "ts": "2026-07-12T18:37:13.192262",
       "url": "https://s.shopee.vn/3LP26vdSAW"
+    },
+    {
+      "ts": "2026-07-12T18:39:12.026432",
+      "url": "https://s.shopee.vn/40eiu9auoi"
     }
   ],
   "groupLinkMap": {
@@ -1755,7 +1760,8 @@
       "https://s.shopee.vn/70IKQKbTjV"
     ],
     "https://www.facebook.com/groups/hoimuabanipad": [
-      "https://s.shopee.vn/6pyuE1c74U"
+      "https://s.shopee.vn/6pyuE1c74U",
+      "https://s.shopee.vn/40eiu9auoi"
     ],
     "https://www.facebook.com/groups/1305456236142886": [
       "https://s.shopee.vn/7prRPrYJ2i",
@@ -1787,8 +1793,8 @@
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 21,
-      "groups_used_count": 21,
+      "posted_count": 22,
+      "groups_used_count": 22,
       "status": "active",
       "anonymous_commented": 0
     }
