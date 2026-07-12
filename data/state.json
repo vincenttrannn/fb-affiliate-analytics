@@ -1,15 +1,11 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 670,
-  "totalGroups": 560,
+  "totalPostedLinks": 674,
+  "totalGroups": 563,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-13T01:57:31.275647",
+  "lastUpdated": "2026-07-13T02:12:57.730353",
   "postedLinks": [
-    "https://s.shopee.vn/W4qgJ26dj",
-    "https://s.shopee.vn/9zvvzovrzT",
-    "https://s.shopee.vn/BS0HnetN7",
-    "https://s.shopee.vn/LlQTxs8W2",
     "https://s.shopee.vn/qhh53KDsO",
     "https://s.shopee.vn/9pcVnZ45lu",
     "https://s.shopee.vn/8fQYPOV8Ln",
@@ -505,7 +501,11 @@
     "https://s.shopee.vn/9UzfSOd8xf",
     "https://s.shopee.vn/AUsCeEZKvt",
     "https://s.shopee.vn/AAFMBWaz2I",
-    "https://s.shopee.vn/9zvvzDbcNH"
+    "https://s.shopee.vn/9zvvzDbcNH",
+    "https://s.shopee.vn/9UzfOIdWOE",
+    "https://s.shopee.vn/9KgFBze9jD",
+    "https://s.shopee.vn/9AMozgen4C",
+    "https://s.shopee.vn/8pjyb4g3kA"
   ],
   "postedTimeline": [
     {
@@ -2107,6 +2107,22 @@
     {
       "ts": "2026-07-13T01:54:30.276432",
       "url": "https://s.shopee.vn/9zvvzDbcNH"
+    },
+    {
+      "ts": "2026-07-13T02:01:51.503869",
+      "url": "https://s.shopee.vn/9UzfOIdWOE"
+    },
+    {
+      "ts": "2026-07-13T02:03:01.293823",
+      "url": "https://s.shopee.vn/9KgFBze9jD"
+    },
+    {
+      "ts": "2026-07-13T02:04:13.649769",
+      "url": "https://s.shopee.vn/9AMozgen4C"
+    },
+    {
+      "ts": "2026-07-13T02:12:43.919324",
+      "url": "https://s.shopee.vn/8pjyb4g3kA"
     }
   ],
   "groupLinkMap": {
@@ -2784,15 +2800,15 @@
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 7,
-      "groups_used_count": 7,
+      "posted_count": 8,
+      "groups_used_count": 8,
       "status": "active",
       "anonymous_commented": 0
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 3,
-      "groups_used_count": 3,
+      "posted_count": 6,
+      "groups_used_count": 6,
       "status": "active",
       "anonymous_commented": 0
     }
