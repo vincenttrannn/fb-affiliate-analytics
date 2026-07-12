@@ -1,6 +1,6 @@
 {
-  "sourceFile": "D:\\Download\\WebsiteClickReport202607120144.csv",
-  "exportedAt": "2026-07-12T10:07:31.230795",
+  "sourceFile": "D:\\Document\\Affiliate Automation\\datasource\\raw_shopee_export\\click_report\\WebsiteClickReport202607120144.csv",
+  "exportedAt": "2026-07-12T13:40:57.765335",
   "summary": {
     "totalClicks": 13,
     "facebookClicks": 6,
@@ -29,7 +29,5 @@
     }
   ],
   "_type": "click",
-  "change": {
-    "totalClicksPct": 0.0
-  }
+  "change": null
 }

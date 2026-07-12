@@ -1,8 +1,9 @@
 [
   {
     "type": "click",
-    "importedAt": "2026-07-12T10:04:40.962046",
-    "sourceFile": "D:\\Download\\WebsiteClickReport202607120144.csv",
+    "sourceFile": "WebsiteClickReport202607120144.csv",
+    "contentHash": "2ce6d2837b3a34fe4b453021fedaf6a685df5f013706f9bd3d8d2feeeccfc4bc",
+    "importedAt": "2026-07-12T13:40:57.765335",
     "summary": {
       "totalClicks": 13,
       "facebookClicks": 6,
@@ -19,74 +20,9 @@
   },
   {
     "type": "conversion",
-    "importedAt": "2026-07-12T10:04:41.009152",
-    "sourceFile": "D:\\Download\\AffiliateCommissionReport_202607120142.csv",
-    "summary": {
-      "totalOrders": 1,
-      "totalItems": 3,
-      "totalCommission": 6789,
-      "totalPurchaseValue": 81660,
-      "pendingCommission": 6789,
-      "completedCommission": 0,
-      "periodFrom": "2026-07-07",
-      "periodTo": "2026-07-10"
-    }
-  },
-  {
-    "type": "click",
-    "importedAt": "2026-07-12T10:05:52.006200",
-    "sourceFile": "D:\\Download\\WebsiteClickReport202607120144.csv",
-    "summary": {
-      "totalClicks": 13,
-      "facebookClicks": 6,
-      "otherClicks": 7,
-      "periodFrom": "2026-07-06",
-      "periodTo": "2026-07-10",
-      "clicksBySubId": {
-        "Facebook-CommissionsXTRA---": 6,
-        "Facebook-ProductOffer-All--": 3,
-        "Facebook-ShopeeOffer---": 3,
-        "----": 1
-      }
-    }
-  },
-  {
-    "type": "conversion",
-    "importedAt": "2026-07-12T10:05:52.010211",
-    "sourceFile": "D:\\Download\\AffiliateCommissionReport_202607120142.csv",
-    "summary": {
-      "totalOrders": 2,
-      "totalItems": 3,
-      "totalCommission": 6789,
-      "totalPurchaseValue": 81660,
-      "pendingCommission": 6789,
-      "completedCommission": 0,
-      "periodFrom": "2026-07-07",
-      "periodTo": "2026-07-10"
-    }
-  },
-  {
-    "type": "click",
-    "importedAt": "2026-07-12T10:07:31.230795",
-    "sourceFile": "D:\\Download\\WebsiteClickReport202607120144.csv",
-    "summary": {
-      "totalClicks": 13,
-      "facebookClicks": 6,
-      "otherClicks": 7,
-      "periodFrom": "2026-07-06",
-      "periodTo": "2026-07-10",
-      "clicksBySubId": {
-        "Facebook-CommissionsXTRA---": 6,
-        "Facebook-ProductOffer-All--": 3,
-        "Facebook-ShopeeOffer---": 3,
-        "----": 1
-      }
-    }
-  },
-  {
-    "type": "conversion",
-    "importedAt": "2026-07-12T10:07:31.234325",
-    "sourceFile": "D:\\Download\\AffiliateCommissionReport_202607120142.csv",
+    "sourceFile": "AffiliateCommissionReport_202607120142.csv",
+    "contentHash": "f8aab5a8fc3377438cb2c6f1aa0bda38e1ec7cb7c8dd5703193e77fc7b77c8c8",
+    "importedAt": "2026-07-12T13:40:57.774905",
     "summary": {
       "totalOrders": 2,
       "totalItems": 3,

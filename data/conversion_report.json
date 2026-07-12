@@ -1,6 +1,6 @@
 {
-  "sourceFile": "D:\\Download\\AffiliateCommissionReport_202607120142.csv",
-  "exportedAt": "2026-07-12T10:07:31.234325",
+  "sourceFile": "D:\\Document\\Affiliate Automation\\datasource\\raw_shopee_export\\conversion_report\\AffiliateCommissionReport_202607120142.csv",
+  "exportedAt": "2026-07-12T13:40:57.774905",
   "summary": {
     "totalOrders": 2,
     "totalItems": 3,
@@ -42,8 +42,5 @@
     }
   ],
   "_type": "conversion",
-  "change": {
-    "totalOrdersPct": 0.0,
-    "totalCommissionPct": 0.0
-  }
+  "change": null
 }
