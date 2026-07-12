@@ -1,0 +1,35 @@
+{
+  "sourceFile": "D:\\Download\\WebsiteClickReport202607120144.csv",
+  "exportedAt": "2026-07-12T10:07:31.230795",
+  "summary": {
+    "totalClicks": 13,
+    "facebookClicks": 6,
+    "otherClicks": 7,
+    "periodFrom": "2026-07-06",
+    "periodTo": "2026-07-10",
+    "clicksBySubId": {
+      "Facebook-CommissionsXTRA---": 6,
+      "Facebook-ProductOffer-All--": 3,
+      "Facebook-ShopeeOffer---": 3,
+      "----": 1
+    }
+  },
+  "timeline": [
+    {
+      "date": "2026-07-06",
+      "clicks": 1
+    },
+    {
+      "date": "2026-07-07",
+      "clicks": 2
+    },
+    {
+      "date": "2026-07-10",
+      "clicks": 10
+    }
+  ],
+  "_type": "click",
+  "change": {
+    "totalClicksPct": 0.0
+  }
+}

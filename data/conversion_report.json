@@ -1,0 +1,49 @@
+{
+  "sourceFile": "D:\\Download\\AffiliateCommissionReport_202607120142.csv",
+  "exportedAt": "2026-07-12T10:07:31.234325",
+  "summary": {
+    "totalOrders": 2,
+    "totalItems": 3,
+    "totalCommission": 6789,
+    "totalPurchaseValue": 81660,
+    "pendingCommission": 6789,
+    "completedCommission": 0,
+    "periodFrom": "2026-07-07",
+    "periodTo": "2026-07-10"
+  },
+  "timeline": [
+    {
+      "date": "2026-07-07",
+      "orders": 1,
+      "commission": 880
+    },
+    {
+      "date": "2026-07-10",
+      "orders": 1,
+      "commission": 5909
+    }
+  ],
+  "topProducts": [
+    {
+      "name": "Mặt nạ dưỡng trắng LUCENBASE 377 – 1 Hộp (10 Miếng +2 Miếng Tặng) – Làm Sáng Da & Dưỡng Ẩm",
+      "shop": "Lucenbaseskincase.vn",
+      "commission": 5909,
+      "qty": 1,
+      "category": "Sắc Đẹp",
+      "orderId": "260710BJYA2TMX"
+    },
+    {
+      "name": "Kính mát nữ KM34 kính du lịch thời trang gọng chữ nhật phong cách Hàn Quốc",
+      "shop": "Madeline",
+      "commission": 880,
+      "qty": 1,
+      "category": "Phụ Kiện Thời Trang",
+      "orderId": "2607073YF2HQ0W"
+    }
+  ],
+  "_type": "conversion",
+  "change": {
+    "totalOrdersPct": 0.0,
+    "totalCommissionPct": 0.0
+  }
+}
