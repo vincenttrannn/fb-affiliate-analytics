@@ -42,9 +42,9 @@ export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
   }, [numVal, animDone])
 
   return (
-    <Card className="card-hover">
-      <CardContent className="p-5">
-        <div ref={ref} className="flex flex-col gap-1.5">
+    <Card className="card-hover h-full">
+      <CardContent className="p-5 h-full">
+        <div ref={ref} className="flex flex-col gap-1.5 justify-center h-full">
           <div className="flex items-center gap-2">
             <div className="flex items-center justify-center h-5 w-5 text-primary shrink-0">{icon}</div>
             <p className="text-sm font-medium text-muted-foreground leading-5">{title}</p>
