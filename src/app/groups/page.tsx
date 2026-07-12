@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge'
 import { Table, THead, Th, TBody, Tr, Td } from '@/components/ui/table'
 import { BarChartCard } from '@/components/charts'
 
-
 export default function GroupsPage() {
   const state = getState()
   const groups = getGroups()
