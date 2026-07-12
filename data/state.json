@@ -1,16 +1,11 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 606,
-  "totalGroups": 516,
+  "totalPostedLinks": 611,
+  "totalGroups": 521,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-13T00:08:36.705517",
+  "lastUpdated": "2026-07-13T00:24:13.102888",
   "postedLinks": [
-    "https://s.shopee.vn/903Oo27GRW",
-    "https://s.shopee.vn/8AUHo4pnVR",
-    "https://s.shopee.vn/3ViSIW32VN",
-    "https://s.shopee.vn/4VazRlOOaN",
-    "https://s.shopee.vn/4LHZFJcuPC",
     "https://s.shopee.vn/LlQU02jyg",
     "https://s.shopee.vn/1qaEGkx1w7",
     "https://s.shopee.vn/4fuPdPvvDm",
@@ -505,7 +500,12 @@
     "https://s.shopee.vn/3ViSJKqTtI",
     "https://s.shopee.vn/7VEb4gbFmC",
     "https://s.shopee.vn/7fY1GzacRH",
-    "https://s.shopee.vn/6pyuHSdn88"
+    "https://s.shopee.vn/6pyuHSdn88",
+    "https://s.shopee.vn/7Abkg4cWSE",
+    "https://s.shopee.vn/6AjDUEgKU4",
+    "https://s.shopee.vn/6L2dgXfh99",
+    "https://s.shopee.vn/5VTWh0irq0",
+    "https://s.shopee.vn/5LA6UhjVAz"
   ],
   "postedTimeline": [
     {
@@ -1851,6 +1851,26 @@
     {
       "ts": "2026-07-13T00:08:25.628036",
       "url": "https://s.shopee.vn/6pyuHSdn88"
+    },
+    {
+      "ts": "2026-07-13T00:10:11.657944",
+      "url": "https://s.shopee.vn/7Abkg4cWSE"
+    },
+    {
+      "ts": "2026-07-13T00:11:39.068951",
+      "url": "https://s.shopee.vn/6AjDUEgKU4"
+    },
+    {
+      "ts": "2026-07-13T00:20:31.107221",
+      "url": "https://s.shopee.vn/6L2dgXfh99"
+    },
+    {
+      "ts": "2026-07-13T00:21:29.027549",
+      "url": "https://s.shopee.vn/5VTWh0irq0"
+    },
+    {
+      "ts": "2026-07-13T00:22:15.939603",
+      "url": "https://s.shopee.vn/5LA6UhjVAz"
     }
   ],
   "groupLinkMap": {
@@ -2521,15 +2541,15 @@
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 4,
-      "groups_used_count": 4,
+      "posted_count": 7,
+      "groups_used_count": 7,
       "status": "active",
       "anonymous_commented": 0
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 2,
-      "groups_used_count": 2,
+      "posted_count": 4,
+      "groups_used_count": 4,
       "status": "active",
       "anonymous_commented": 0
     }
