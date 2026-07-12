@@ -16,7 +16,7 @@ export async function GET(
   const today = new Date().toISOString().slice(0, 10)
 
   Promise.allSettled([
-    upstashExec('INCR', `stats:${slug}`),
+    upstashExec('INCR', 'total:clicks'),
     upstashExec('INCR', `daily:${today}`),
     upstashExec('ZINCRBY', 'top:links', '1', slug),
   ])
