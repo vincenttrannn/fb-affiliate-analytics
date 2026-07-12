@@ -9,9 +9,10 @@ interface KpiCardProps {
   icon: React.ReactNode
   trend?: { value: number; label: string }
   color?: string
+  className?: string
 }
 
-export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
+export function KpiCard({ title, value, icon, trend, color, className }: KpiCardProps) {
   const [displayValue, setDisplayValue] = useState(0)
   const [animDone, setAnimDone] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
@@ -42,7 +43,7 @@ export function KpiCard({ title, value, icon, trend, color }: KpiCardProps) {
   }, [numVal, animDone])
 
   return (
-    <Card className="card-hover h-full">
+    <Card className={`card-hover h-full ${className || ''}`}>
       <CardContent className="p-5 h-full">
         <div ref={ref} className="flex flex-col gap-1.5 justify-center h-full">
           <div className="flex items-center gap-2">

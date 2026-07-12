@@ -47,16 +47,16 @@ export default function OverviewClient({ state, products, clickReport, conversio
 
   return (
     <>
-      <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-        <KpiCard title="Total Clicks" value={totalClicks} icon={<Link className="h-4 w-4" />} color="#6366f1"
+      <div className="flex flex-wrap gap-4">
+        <KpiCard title="Total Clicks" value={totalClicks} icon={<Link className="h-4 w-4" />} color="#6366f1" className="flex-1 min-w-[180px]"
           trend={clickReport?.change ? { value: clickReport.change.totalClicksPct ?? 0, label: 'vs last report' } : undefined} />
-        <KpiCard title="Today Clicks" value={todayClicks} icon={<Activity className="h-4 w-4" />} color="#8b5cf6" />
-        <KpiCard title="Orders" value={totalOrders} icon={<ShoppingCart className="h-4 w-4" />} color="#a855f7"
+        <KpiCard title="Today Clicks" value={todayClicks} icon={<Activity className="h-4 w-4" />} color="#8b5cf6" className="flex-1 min-w-[160px]" />
+        <KpiCard title="Orders" value={totalOrders} icon={<ShoppingCart className="h-4 w-4" />} color="#a855f7" className="flex-1 min-w-[160px]"
           trend={conversionReport?.change ? { value: conversionReport.change.totalOrdersPct ?? 0, label: 'vs last report' } : undefined} />
-        <KpiCard title="Commission Earned" value={totalCommission ? `₫${totalCommission.toLocaleString()}` : 0} icon={<DollarSign className="h-4 w-4" />} color="#ec4899"
+        <KpiCard title="Commission Earned" value={totalCommission ? `₫${totalCommission.toLocaleString()}` : 0} icon={<DollarSign className="h-4 w-4" />} color="#ec4899" className="flex-1 min-w-[220px]"
           trend={conversionReport?.change ? { value: conversionReport.change.totalCommissionPct ?? 0, label: 'vs last report' } : undefined} />
-        <KpiCard title="Avg Commission" value={avgCommission ? `₫${avgCommission.toLocaleString()}` : 0} icon={<TrendingUp className="h-4 w-4" />} color="#f97316" />
-        <KpiCard title="Groups Reached" value={groupsReached} icon={<Users className="h-4 w-4" />} color="#22c55e" />
+        <KpiCard title="Avg Commission" value={avgCommission ? `₫${avgCommission.toLocaleString()}` : 0} icon={<TrendingUp className="h-4 w-4" />} color="#f97316" className="flex-1 min-w-[180px]" />
+        <KpiCard title="Groups Reached" value={groupsReached} icon={<Users className="h-4 w-4" />} color="#22c55e" className="flex-1 min-w-[160px]" />
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">
