@@ -1,15 +1,11 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 966,
-  "totalGroups": 672,
+  "totalPostedLinks": 970,
+  "totalGroups": 673,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-13T20:20:22.865738",
+  "lastUpdated": "2026-07-13T20:35:55.406683",
   "postedLinks": [
-    "https://s.shopee.vn/2LWUv7AcfX",
-    "https://s.shopee.vn/BS0L8Is48",
-    "https://s.shopee.vn/18a8pJVP7",
-    "https://s.shopee.vn/qhh8MGKiK",
     "https://s.shopee.vn/1117KfFhNP",
     "https://s.shopee.vn/4Ay96U3dx2",
     "https://s.shopee.vn/40eiuB4HI1",
@@ -505,25 +501,13 @@
     "https://s.shopee.vn/7fY1DX4kjF",
     "https://s.shopee.vn/30mBexMWCO",
     "https://s.shopee.vn/3B5brGLsrR",
-    "https://s.shopee.vn/3ViSFsKcBb"
+    "https://s.shopee.vn/3ViSFsKcBb",
+    "https://s.shopee.vn/4LHZFPHRUm",
+    "https://s.shopee.vn/8fQYPN0wh5",
+    "https://s.shopee.vn/4VazRiGo9p",
+    "https://s.shopee.vn/5AqgEwEGo1"
   ],
   "postedTimeline": [
-    {
-      "ts": "2026-07-12T19:20:57.970897",
-      "url": "https://s.shopee.vn/2LWUv7AcfX"
-    },
-    {
-      "ts": "2026-07-12T19:21:51.377938",
-      "url": "https://s.shopee.vn/BS0L8Is48"
-    },
-    {
-      "ts": "2026-07-12T19:23:15.875257",
-      "url": "https://s.shopee.vn/18a8pJVP7"
-    },
-    {
-      "ts": "2026-07-12T19:24:49.135144",
-      "url": "https://s.shopee.vn/qhh8MGKiK"
-    },
     {
       "ts": "2026-07-12T19:26:01.492954",
       "url": "https://s.shopee.vn/1117KfFhNP"
@@ -2507,6 +2491,22 @@
     {
       "ts": "2026-07-13T20:18:47.855725",
       "url": "https://s.shopee.vn/3ViSFsKcBb"
+    },
+    {
+      "ts": "2026-07-13T20:20:41.899238",
+      "url": "https://s.shopee.vn/4LHZFPHRUm"
+    },
+    {
+      "ts": "2026-07-13T20:28:01.473027",
+      "url": "https://s.shopee.vn/8fQYPN0wh5"
+    },
+    {
+      "ts": "2026-07-13T20:28:55.370948",
+      "url": "https://s.shopee.vn/4VazRiGo9p"
+    },
+    {
+      "ts": "2026-07-13T20:30:25.503899",
+      "url": "https://s.shopee.vn/5AqgEwEGo1"
     }
   ],
   "groupLinkMap": {
@@ -3244,15 +3244,15 @@
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 29,
-      "groups_used_count": 29,
+      "posted_count": 30,
+      "groups_used_count": 30,
       "status": "active",
       "anonymous_commented": 0
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 3,
-      "groups_used_count": 3,
+      "posted_count": 6,
+      "groups_used_count": 6,
       "status": "active",
       "anonymous_commented": 0
     }
