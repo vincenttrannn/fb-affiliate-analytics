@@ -1,15 +1,15 @@
 {
-  "sourceFile": "D:\\Document\\Affiliate Automation\\datasource\\raw_shopee_export\\conversion_report\\AffiliateCommissionReport_202607120142.csv",
-  "exportedAt": "2026-07-12T13:40:57.774905",
+  "sourceFile": "D:\\Document\\Affiliate Automation\\datasource\\raw_shopee_export\\conversion_report\\AffiliateCommissionReport_202607141043.csv",
+  "exportedAt": "2026-07-14T10:48:21.593353",
   "summary": {
-    "totalOrders": 2,
-    "totalItems": 3,
-    "totalCommission": 6789,
-    "totalPurchaseValue": 81660,
-    "pendingCommission": 6789,
-    "completedCommission": 0,
+    "totalOrders": 3,
+    "totalItems": 4,
+    "totalCommission": 21374,
+    "totalPurchaseValue": 498390,
+    "pendingCommission": 20494,
+    "completedCommission": 880,
     "periodFrom": "2026-07-07",
-    "periodTo": "2026-07-10"
+    "periodTo": "2026-07-12"
   },
   "timeline": [
     {
@@ -21,9 +21,22 @@
       "date": "2026-07-10",
       "orders": 1,
       "commission": 5909
+    },
+    {
+      "date": "2026-07-12",
+      "orders": 1,
+      "commission": 14585
     }
   ],
   "topProducts": [
+    {
+      "name": "⚡Hỏa Tốc⚡ CẦU TRƯỢT CHO BÉ - CẦU TRƯỢT 3 IN 1 - MẪU NAI - MẪU HỒ LY -CÁ HEO - CAO CẤP Toyskingdom",
+      "shop": "TOYSKINGDOM.STORE",
+      "commission": 14585,
+      "qty": 1,
+      "category": "Mẹ & Bé",
+      "orderId": "260712F87XTGR0"
+    },
     {
       "name": "Mặt nạ dưỡng trắng LUCENBASE 377 – 1 Hộp (10 Miếng +2 Miếng Tặng) – Làm Sáng Da & Dưỡng Ẩm",
       "shop": "Lucenbaseskincase.vn",
@@ -42,5 +55,8 @@
     }
   ],
   "_type": "conversion",
-  "change": null
+  "change": {
+    "totalOrdersPct": 50.0,
+    "totalCommissionPct": 214.8
+  }
 }

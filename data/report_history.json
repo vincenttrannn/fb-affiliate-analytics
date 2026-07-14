@@ -33,5 +33,39 @@
       "periodFrom": "2026-07-07",
       "periodTo": "2026-07-10"
     }
+  },
+  {
+    "type": "click",
+    "sourceFile": "WebsiteClickReport202607141043.csv",
+    "contentHash": "80f9eefaab71fc976a9a5924adf583bc6d3701a9ebe55095e7206923d2561656",
+    "importedAt": "2026-07-14T10:48:21.584343",
+    "summary": {
+      "totalClicks": 47,
+      "facebookClicks": 41,
+      "otherClicks": 6,
+      "periodFrom": "2026-07-07",
+      "periodTo": "2026-07-13",
+      "clicksBySubId": {
+        "Facebook-CommissionsXTRA---": 41,
+        "Facebook-ProductOffer-All--": 3,
+        "Facebook-ShopeeOffer---": 3
+      }
+    }
+  },
+  {
+    "type": "conversion",
+    "sourceFile": "AffiliateCommissionReport_202607141043.csv",
+    "contentHash": "f7892224a0c237c8692c849e69e3eaa8e16588027d782007b9276fb18c8bafad",
+    "importedAt": "2026-07-14T10:48:21.593353",
+    "summary": {
+      "totalOrders": 3,
+      "totalItems": 4,
+      "totalCommission": 21374,
+      "totalPurchaseValue": 498390,
+      "pendingCommission": 20494,
+      "completedCommission": 880,
+      "periodFrom": "2026-07-07",
+      "periodTo": "2026-07-12"
+    }
   }
 ]
