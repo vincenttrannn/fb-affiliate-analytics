@@ -1,13 +1,11 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 992,
+  "totalPostedLinks": 994,
   "totalGroups": 679,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-14T10:48:21.989219",
+  "lastUpdated": "2026-07-14T11:04:06.754212",
   "postedLinks": [
-    "https://s.shopee.vn/9KgFFyjyTY",
-    "https://s.shopee.vn/9UzfSHjL8b",
     "https://s.shopee.vn/9fJ5eaihne",
     "https://s.shopee.vn/9pcVqti4Sh",
     "https://s.shopee.vn/80ArfWp3BQ",
@@ -505,17 +503,11 @@
     "https://s.shopee.vn/8pjybg0JN9",
     "https://s.shopee.vn/9fJ5bCx8gK",
     "https://s.shopee.vn/AKYmOSOmwu",
-    "https://s.shopee.vn/AAFMC9PQHv"
+    "https://s.shopee.vn/AAFMC9PQHv",
+    "https://s.shopee.vn/9AMp0JTEJp",
+    "https://s.shopee.vn/8fQYPOV8Kk"
   ],
   "postedTimeline": [
-    {
-      "ts": "2026-07-12T20:01:34.069578",
-      "url": "https://s.shopee.vn/9KgFFyjyTY"
-    },
-    {
-      "ts": "2026-07-12T20:04:16.252925",
-      "url": "https://s.shopee.vn/9UzfSHjL8b"
-    },
     {
       "ts": "2026-07-12T20:05:13.858101",
       "url": "https://s.shopee.vn/9fJ5eaihne"
@@ -2507,6 +2499,14 @@
     {
       "ts": "2026-07-13T21:08:36.008038",
       "url": "https://s.shopee.vn/AAFMC9PQHv"
+    },
+    {
+      "ts": "2026-07-14T10:56:49.429663",
+      "url": "https://s.shopee.vn/9AMp0JTEJp"
+    },
+    {
+      "ts": "2026-07-14T10:59:36.440120",
+      "url": "https://s.shopee.vn/8fQYPOV8Kk"
     }
   ],
   "groupLinkMap": {
@@ -2918,7 +2918,8 @@
       "https://s.shopee.vn/4fuPde37cC",
       "https://s.shopee.vn/3qLIeOeoP0",
       "https://s.shopee.vn/4Ay930dXk9",
-      "https://s.shopee.vn/qhh4yUlaI"
+      "https://s.shopee.vn/qhh4yUlaI",
+      "https://s.shopee.vn/9AMp0JTEJp"
     ],
     "https://www.facebook.com/groups/934059952828615": [
       "https://s.shopee.vn/5VTWdSYT2X"
@@ -3246,15 +3247,15 @@
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 30,
-      "groups_used_count": 30,
+      "posted_count": 0,
+      "groups_used_count": 0,
       "status": "active",
       "anonymous_commented": 0
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 28,
-      "groups_used_count": 28,
+      "posted_count": 0,
+      "groups_used_count": 0,
       "status": "active",
       "anonymous_commented": 0
     }
