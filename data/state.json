@@ -1,14 +1,11 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 1029,
-  "totalGroups": 695,
+  "totalPostedLinks": 1032,
+  "totalGroups": 697,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-16T16:06:56.870785",
+  "lastUpdated": "2026-07-16T16:22:12.364326",
   "postedLinks": [
-    "https://s.shopee.vn/1117KgkVO9",
-    "https://s.shopee.vn/qhh8Nl8j8",
-    "https://s.shopee.vn/gOGw4lm47",
     "https://s.shopee.vn/1qaEKDhKhM",
     "https://s.shopee.vn/1VxNvbibNK",
     "https://s.shopee.vn/1LdxjIjEiJ",
@@ -505,21 +502,12 @@
     "https://s.shopee.vn/W4qgO0Dur",
     "https://s.shopee.vn/W54LlJjbb",
     "https://s.shopee.vn/20ts8WE1Yu",
-    "https://s.shopee.vn/1gH1juFIEw"
+    "https://s.shopee.vn/1gH1juFIEw",
+    "https://s.shopee.vn/2g9YvkBUDE",
+    "https://s.shopee.vn/3B5pWf9aCN",
+    "https://s.shopee.vn/5AqtuL1y8p"
   ],
   "postedTimeline": [
-    {
-      "ts": "2026-07-12T21:11:28.111655",
-      "url": "https://s.shopee.vn/1117KgkVO9"
-    },
-    {
-      "ts": "2026-07-12T21:13:01.744495",
-      "url": "https://s.shopee.vn/qhh8Nl8j8"
-    },
-    {
-      "ts": "2026-07-12T21:14:05.628533",
-      "url": "https://s.shopee.vn/gOGw4lm47"
-    },
     {
       "ts": "2026-07-12T21:15:04.099172",
       "url": "https://s.shopee.vn/1qaEKDhKhM"
@@ -2507,6 +2495,18 @@
     {
       "ts": "2026-07-15T11:26:54.968955",
       "url": "https://s.shopee.vn/1gH1juFIEw"
+    },
+    {
+      "ts": "2026-07-16T16:10:45.636822",
+      "url": "https://s.shopee.vn/2g9YvkBUDE"
+    },
+    {
+      "ts": "2026-07-16T16:11:53.517131",
+      "url": "https://s.shopee.vn/3B5pWf9aCN"
+    },
+    {
+      "ts": "2026-07-16T16:13:56.291653",
+      "url": "https://s.shopee.vn/5AqtuL1y8p"
     }
   ],
   "groupLinkMap": {
@@ -3258,9 +3258,9 @@
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 5,
-      "groups_used_count": 5,
-      "status": "active",
+      "posted_count": 8,
+      "groups_used_count": 8,
+      "status": "rate_limited",
       "anonymous_commented": 0
     }
   ]
