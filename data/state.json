@@ -4,7 +4,7 @@
   "totalGroups": 803,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-20T11:28:07.360544",
+  "lastUpdated": "2026-07-20T11:48:48.768888",
   "postedLinks": [
     "https://s.shopee.vn/8V78GYgwzJ",
     "https://s.shopee.vn/80Arfdir0E",
@@ -3253,9 +3253,9 @@
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 30,
-      "groups_used_count": 37,
-      "status": "active",
+      "posted_count": 0,
+      "groups_used_count": 0,
+      "status": "rate_limited",
       "anonymous_commented": 0
     },
     {
