@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 30,
-  "totalGroups": 30,
+  "totalPostedLinks": 33,
+  "totalGroups": 33,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-20T13:42:10.133667",
+  "lastUpdated": "2026-07-20T14:38:57.673033",
   "postedLinks": [
     "https://s.shopee.vn/BSDx9L0HV",
     "https://s.shopee.vn/W54LlJjbb",
@@ -35,7 +35,10 @@
     "https://s.shopee.vn/1gH1juFIEw",
     "https://s.shopee.vn/4qE3Vj3Eoj",
     "https://s.shopee.vn/18nkqLdcS",
-    "https://s.shopee.vn/9fJJGbkq1G"
+    "https://s.shopee.vn/9fJJGbkq1G",
+    "https://s.shopee.vn/1BKl8zHCGg",
+    "https://s.shopee.vn/9Uzt4IlTMD",
+    "https://s.shopee.vn/2BDIKpDODx"
   ],
   "postedTimeline": [
     {
@@ -157,6 +160,18 @@
     {
       "ts": "2026-07-20T13:41:44.440763",
       "url": "https://s.shopee.vn/9fJJGbkq1G"
+    },
+    {
+      "ts": "2026-07-20T13:42:55.497623",
+      "url": "https://s.shopee.vn/1BKl8zHCGg"
+    },
+    {
+      "ts": "2026-07-20T13:44:09.191614",
+      "url": "https://s.shopee.vn/9Uzt4IlTMD"
+    },
+    {
+      "ts": "2026-07-20T13:47:34.466118",
+      "url": "https://s.shopee.vn/2BDIKpDODx"
     }
   ],
   "groupLinkMap": {
@@ -249,20 +264,29 @@
     ],
     "https://www.facebook.com/groups/3723982127657259": [
       "https://s.shopee.vn/9fJJGbkq1G"
+    ],
+    "https://www.facebook.com/groups/lamongtainha": [
+      "https://s.shopee.vn/1BKl8zHCGg"
+    ],
+    "https://www.facebook.com/groups/1298621380476653": [
+      "https://s.shopee.vn/9Uzt4IlTMD"
+    ],
+    "https://www.facebook.com/groups/869649849757778": [
+      "https://s.shopee.vn/2BDIKpDODx"
     ]
   },
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 25,
-      "groups_used_count": 26,
+      "posted_count": 1,
+      "groups_used_count": 1,
       "status": "active",
       "anonymous_commented": 0
     },
     {
       "email": "tgh162003@gmail.com",
-      "posted_count": 5,
-      "groups_used_count": 6,
+      "posted_count": 0,
+      "groups_used_count": 0,
       "status": "active",
       "anonymous_commented": 0
     }
