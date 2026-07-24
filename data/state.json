@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 90,
-  "totalGroups": 89,
+  "totalPostedLinks": 91,
+  "totalGroups": 90,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-24T16:23:57.481568",
+  "lastUpdated": "2026-07-24T16:39:42.816566",
   "postedLinks": [
     "https://s.shopee.vn/9fJVF88Jlv",
     "https://s.shopee.vn/6Ajd4hLdsW",
@@ -95,7 +95,8 @@
     "https://s.shopee.vn/9pcvRR7gQw",
     "https://s.shopee.vn/4VbP5dRzGQ",
     "https://s.shopee.vn/9V052p8x7t",
-    "https://s.shopee.vn/60QCsOMHEW"
+    "https://s.shopee.vn/60QCsOMHEW",
+    "https://s.shopee.vn/AAFlq36Plx"
   ],
   "postedTimeline": [
     {
@@ -457,6 +458,10 @@
     {
       "ts": "2026-07-24T16:10:13.813088",
       "url": "https://s.shopee.vn/60QCsOMHEW"
+    },
+    {
+      "ts": "2026-07-24T16:37:56.558521",
+      "url": "https://s.shopee.vn/AAFlq36Plx"
     }
   ],
   "groupLinkMap": {
@@ -727,13 +732,16 @@
     ],
     "https://www.facebook.com/groups/matlac": [
       "https://s.shopee.vn/60QCsOMHEW"
+    ],
+    "https://www.facebook.com/groups/464399574065153": [
+      "https://s.shopee.vn/AAFlq36Plx"
     ]
   },
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 0,
-      "groups_used_count": 0,
+      "posted_count": 1,
+      "groups_used_count": 2,
       "status": "active",
       "anonymous_commented": 0
     },
