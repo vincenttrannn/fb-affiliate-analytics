@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 40,
-  "totalGroups": 40,
+  "totalPostedLinks": 44,
+  "totalGroups": 44,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-24T19:08:22.253062",
+  "lastUpdated": "2026-07-24T19:27:39.087652",
   "postedLinks": [
     "https://s.shopee.vn/9fJVF88Jlv",
     "https://s.shopee.vn/7KvaSqHCVd",
@@ -45,7 +45,11 @@
     "https://s.shopee.vn/9KgeqW9aRp",
     "https://s.shopee.vn/9ANEeDADms",
     "https://s.shopee.vn/903oRuAr7r",
-    "https://s.shopee.vn/8AUhSNE1oi"
+    "https://s.shopee.vn/8AUhSNE1oi",
+    "https://s.shopee.vn/80BHG4Ef9h",
+    "https://s.shopee.vn/8V7XqzCl8o",
+    "https://s.shopee.vn/7fYQrSFvpj",
+    "https://s.shopee.vn/6pzJrvJ6Wa"
   ],
   "postedTimeline": [
     {
@@ -207,6 +211,22 @@
     {
       "ts": "2026-07-24T19:06:50.258513",
       "url": "https://s.shopee.vn/8AUhSNE1oi"
+    },
+    {
+      "ts": "2026-07-24T19:09:24.940709",
+      "url": "https://s.shopee.vn/80BHG4Ef9h"
+    },
+    {
+      "ts": "2026-07-24T19:13:46.448432",
+      "url": "https://s.shopee.vn/8V7XqzCl8o"
+    },
+    {
+      "ts": "2026-07-24T19:18:38.908675",
+      "url": "https://s.shopee.vn/7fYQrSFvpj"
+    },
+    {
+      "ts": "2026-07-24T19:25:49.044734",
+      "url": "https://s.shopee.vn/6pzJrvJ6Wa"
     }
   ],
   "groupLinkMap": {
@@ -329,13 +349,25 @@
     ],
     "https://www.facebook.com/groups/combosapa.review": [
       "https://s.shopee.vn/8AUhSNE1oi"
+    ],
+    "https://www.facebook.com/groups/608794530038421": [
+      "https://s.shopee.vn/80BHG4Ef9h"
+    ],
+    "https://www.facebook.com/groups/hoichiemnghienlamdep": [
+      "https://s.shopee.vn/8V7XqzCl8o"
+    ],
+    "https://www.facebook.com/groups/1360515109224002": [
+      "https://s.shopee.vn/7fYQrSFvpj"
+    ],
+    "https://www.facebook.com/groups/duolingovietnam": [
+      "https://s.shopee.vn/6pzJrvJ6Wa"
     ]
   },
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 5,
-      "groups_used_count": 12,
+      "posted_count": 9,
+      "groups_used_count": 26,
       "status": "active",
       "anonymous_commented": 0
     },
