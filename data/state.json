@@ -1,19 +1,86 @@
 {
   "version": "1.0.0",
-  "totalPostedLinks": 0,
-  "totalGroups": 0,
+  "totalPostedLinks": 8,
+  "totalGroups": 8,
   "activeAccounts": 2,
   "currentCycle": 2,
-  "lastUpdated": "2026-07-24T12:58:14.952014",
-  "postedLinks": [],
-  "postedTimeline": [],
-  "groupLinkMap": {},
+  "lastUpdated": "2026-07-24T13:13:51.055651",
+  "postedLinks": [
+    "https://s.shopee.vn/9fJVF88Jlv",
+    "https://s.shopee.vn/6Ajd4hLdsW",
+    "https://s.shopee.vn/W5GKHhDO2",
+    "https://s.shopee.vn/Llq7yhqj1",
+    "https://s.shopee.vn/AUscEf5963",
+    "https://s.shopee.vn/7AcAGXHprj",
+    "https://s.shopee.vn/9zwLdk735t",
+    "https://s.shopee.vn/4fupHwRLvN"
+  ],
+  "postedTimeline": [
+    {
+      "ts": "2026-07-24T13:03:45.566587",
+      "url": "https://s.shopee.vn/9fJVF88Jlv"
+    },
+    {
+      "ts": "2026-07-24T13:05:29.683238",
+      "url": "https://s.shopee.vn/6Ajd4hLdsW"
+    },
+    {
+      "ts": "2026-07-24T13:07:22.338608",
+      "url": "https://s.shopee.vn/W5GKHhDO2"
+    },
+    {
+      "ts": "2026-07-24T13:09:23.733111",
+      "url": "https://s.shopee.vn/Llq7yhqj1"
+    },
+    {
+      "ts": "2026-07-24T13:10:30.868604",
+      "url": "https://s.shopee.vn/AUscEf5963"
+    },
+    {
+      "ts": "2026-07-24T13:11:24.164518",
+      "url": "https://s.shopee.vn/7AcAGXHprj"
+    },
+    {
+      "ts": "2026-07-24T13:12:38.073347",
+      "url": "https://s.shopee.vn/9zwLdk735t"
+    },
+    {
+      "ts": "2026-07-24T13:13:34.546101",
+      "url": "https://s.shopee.vn/4fupHwRLvN"
+    }
+  ],
+  "groupLinkMap": {
+    "https://www.facebook.com/groups/beautytipsreviewduocmypham": [
+      "https://s.shopee.vn/9fJVF88Jlv"
+    ],
+    "https://www.facebook.com/groups/2239706486225904": [
+      "https://s.shopee.vn/6Ajd4hLdsW"
+    ],
+    "https://www.facebook.com/groups/nhommuabantudo": [
+      "https://s.shopee.vn/W5GKHhDO2"
+    ],
+    "https://www.facebook.com/groups/3713707188681715": [
+      "https://s.shopee.vn/Llq7yhqj1"
+    ],
+    "https://www.facebook.com/groups/2511088225838802": [
+      "https://s.shopee.vn/AUscEf5963"
+    ],
+    "https://www.facebook.com/groups/579948040863104": [
+      "https://s.shopee.vn/7AcAGXHprj"
+    ],
+    "https://www.facebook.com/groups/222674615846500": [
+      "https://s.shopee.vn/9zwLdk735t"
+    ],
+    "https://www.facebook.com/groups/1092635182038782": [
+      "https://s.shopee.vn/4fupHwRLvN"
+    ]
+  },
   "accounts": [
     {
       "email": "huyhaihuoc1603@gmail.com",
-      "posted_count": 0,
-      "groups_used_count": 0,
-      "status": "active",
+      "posted_count": 8,
+      "groups_used_count": 9,
+      "status": "rate_limited",
       "anonymous_commented": 0
     },
     {
